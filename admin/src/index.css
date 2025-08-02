@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:wght@500&family=Outfit:wght@100..900&family=Prata&display=swap');
+@import "tailwindcss";
+*{
+    font-family: Outfit;
+}
+.active{
+    background-color: #ffebf5;
+    border-color: #c586A5;
+}
+select,input, textarea{
+    border:1px solid #c2c2c2;
+    outline-color: #c586A5;
+    border-radius: 4px;
+}
