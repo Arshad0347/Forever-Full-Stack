@@ -19,7 +19,7 @@ const Navbar = () => {
 
     const handleRedirect = () => {
     // पूरा URL दें (प्रोजेक्ट B का)
-    window.location.href = 'http://localhost:5174';
+    window.location.href = 'https://forever-admin-lemon-beta.vercel.app';
   };
 
   return (
