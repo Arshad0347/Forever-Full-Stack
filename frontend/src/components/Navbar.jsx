@@ -17,6 +17,11 @@ const Navbar = () => {
     setCartItems({});
   };
 
+    const handleRedirect = () => {
+    // पूरा URL दें (प्रोजेक्ट B का)
+    window.location.href = 'http://localhost:5174';
+  };
+
   return (
     <div className="flex items-center justify-between py-5 font-medium">
       <Link to="/">
@@ -41,6 +46,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         ))}
+        <button className="cursor-pointer border border-gray-700 px-2 py-1 rounded-2xl" onClick={handleRedirect}>Admin Panel</button>
       </ul>
 
       {/* Icons Section */}

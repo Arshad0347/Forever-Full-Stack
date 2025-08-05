@@ -6,8 +6,8 @@ import { FiMail, FiLock, FiArrowRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const Login = ({ setToken }) => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("zudio_e-commerce@gmail.com");
+  const [password, setPassword] = useState("forvever@Zudio.co@");
   const [isLoading, setIsLoading] = useState(false);
 
   const onSubmitHandler = async (e) => {
@@ -76,6 +76,7 @@ const Login = ({ setToken }) => {
               </div>
               <input
                 onChange={(e) => setEmail(e.target.value)}
+                value={email}
                 className="block w-full pl-10 pr-3 py-3 rounded-lg border border-gray-300 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
                 type="email"
                 placeholder="your@email.com"
@@ -94,6 +95,7 @@ const Login = ({ setToken }) => {
               </div>
               <input
                 onChange={(e) => setPassword(e.target.value)}
+                value={password}
                 className="block w-full pl-10 pr-3 py-3 rounded-lg border border-gray-300 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
                 type="password"
                 placeholder="••••••••"
